@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "projects": {
+    "experiment-nrwl-nx": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "apps/experiment-nrwl-nx",
+      "sourceRoot": "apps/experiment-nrwl-nx/src",
+      "prefix": "myworkspace",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/experiment-nrwl-nx",
+            "index": "apps/experiment-nrwl-nx/src/index.html",
+            "main": "apps/experiment-nrwl-nx/src/main.ts",
+            "polyfills": "apps/experiment-nrwl-nx/src/polyfills.ts",
+            "tsConfig": "apps/experiment-nrwl-nx/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "apps/experiment-nrwl-nx/src/favicon.ico",
+              "apps/experiment-nrwl-nx/src/assets"
+            ],
+            "styles": ["apps/experiment-nrwl-nx/src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/experiment-nrwl-nx/src/environments/environment.ts",
+                  "with": "apps/experiment-nrwl-nx/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "experiment-nrwl-nx:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "experiment-nrwl-nx:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "experiment-nrwl-nx:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/experiment-nrwl-nx/tsconfig.app.json",
+              "apps/experiment-nrwl-nx/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/experiment-nrwl-nx/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/experiment-nrwl-nx/jest.config.js",
+            "tsConfig": "apps/experiment-nrwl-nx/tsconfig.spec.json",
+            "setupFile": "apps/experiment-nrwl-nx/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "experiment-nrwl-nx-e2e": {
+      "root": "apps/experiment-nrwl-nx-e2e",
+      "sourceRoot": "apps/experiment-nrwl-nx-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/experiment-nrwl-nx-e2e/cypress.json",
+            "tsConfig": "apps/experiment-nrwl-nx-e2e/tsconfig.e2e.json",
+            "devServerTarget": "experiment-nrwl-nx:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "experiment-nrwl-nx:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/experiment-nrwl-nx-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/experiment-nrwl-nx-e2e/**"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "experiment-nrwl-nx"
+}
