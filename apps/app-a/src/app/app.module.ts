@@ -8,7 +8,31 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    RouterModule.forRoot(
+      [
+        {
+          path: 'page1',
+          loadChildren: () =>
+            import('@myworkspace/page1').then(module => module.Page1Module)
+        },
+        {
+          path: 'page2',
+          loadChildren: () =>
+            import('@myworkspace/page2').then(module => module.Page2Module)
+        },
+        {
+          path: 'page3',
+          loadChildren: () =>
+            import('@myworkspace/page3').then(module => module.Page3Module)
+        },
+        {
+          path: 'page4',
+          loadChildren: () =>
+            import('@myworkspace/page4').then(module => module.Page4Module)
+        }
+      ],
+      { initialNavigation: 'enabled' }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

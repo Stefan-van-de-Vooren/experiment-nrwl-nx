@@ -17,6 +17,31 @@
     "app-a-e2e": {
       "tags": [],
       "implicitDependencies": ["app-a"]
+    },
+    "app-b": {
+      "tags": []
+    },
+    "app-b-e2e": {
+      "tags": [],
+      "implicitDependencies": ["app-b"]
+    },
+    "page1": {
+      "tags": []
+    },
+    "page2": {
+      "tags": []
+    },
+    "page3": {
+      "tags": []
+    },
+    "page4": {
+      "tags": []
+    },
+    "ui-header": {
+      "tags": []
+    },
+    "ui-components": {
+      "tags": []
     }
   }
 }

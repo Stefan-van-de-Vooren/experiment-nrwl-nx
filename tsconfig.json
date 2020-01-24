@@ -15,7 +15,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myworkspace/page1": ["libs/pages/page1/src/index.ts"],
+      "@myworkspace/page2": ["libs/pages/page2/src/index.ts"],
+      "@myworkspace/page3": ["libs/pages/page3/src/index.ts"],
+      "@myworkspace/page4": ["libs/pages/page4/src/index.ts"],
+      "@myworkspace/ui/header": ["libs/ui/header/src/index.ts"],
+      "@myworkspace/ui/components": ["libs/ui/components/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
