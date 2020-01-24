@@ -11,12 +11,12 @@
     "nx.json": "*"
   },
   "projects": {
-    "experiment-nrwl-nx": {
+    "app-a": {
       "tags": []
     },
-    "experiment-nrwl-nx-e2e": {
+    "app-a-e2e": {
       "tags": [],
-      "implicitDependencies": ["experiment-nrwl-nx"]
+      "implicitDependencies": ["app-a"]
     }
   }
 }

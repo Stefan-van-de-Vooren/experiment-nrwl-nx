@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'experiment-nrwl-nx',
+  name: 'app-a',
   preset: '../../jest.config.js',
-  coverageDirectory: '../../coverage/apps/experiment-nrwl-nx',
+  coverageDirectory: '../../coverage/apps/app-a',
   snapshotSerializers: [
     'jest-preset-angular/AngularSnapshotSerializer.js',
     'jest-preset-angular/HTMLCommentSerializer.js'

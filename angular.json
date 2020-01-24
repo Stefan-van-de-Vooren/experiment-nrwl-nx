@@ -1,35 +1,32 @@
 {
   "version": 1,
   "projects": {
-    "experiment-nrwl-nx": {
+    "app-a": {
       "projectType": "application",
       "schematics": {},
-      "root": "apps/experiment-nrwl-nx",
-      "sourceRoot": "apps/experiment-nrwl-nx/src",
+      "root": "apps/app-a",
+      "sourceRoot": "apps/app-a/src",
       "prefix": "myworkspace",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/experiment-nrwl-nx",
-            "index": "apps/experiment-nrwl-nx/src/index.html",
-            "main": "apps/experiment-nrwl-nx/src/main.ts",
-            "polyfills": "apps/experiment-nrwl-nx/src/polyfills.ts",
-            "tsConfig": "apps/experiment-nrwl-nx/tsconfig.app.json",
+            "outputPath": "dist/apps/app-a",
+            "index": "apps/app-a/src/index.html",
+            "main": "apps/app-a/src/main.ts",
+            "polyfills": "apps/app-a/src/polyfills.ts",
+            "tsConfig": "apps/app-a/tsconfig.app.json",
             "aot": false,
-            "assets": [
-              "apps/experiment-nrwl-nx/src/favicon.ico",
-              "apps/experiment-nrwl-nx/src/assets"
-            ],
-            "styles": ["apps/experiment-nrwl-nx/src/styles.css"],
+            "assets": ["apps/app-a/src/favicon.ico", "apps/app-a/src/assets"],
+            "styles": ["apps/app-a/src/styles.css"],
             "scripts": []
           },
           "configurations": {
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "apps/experiment-nrwl-nx/src/environments/environment.ts",
-                  "with": "apps/experiment-nrwl-nx/src/environments/environment.prod.ts"
+                  "replace": "apps/app-a/src/environments/environment.ts",
+                  "with": "apps/app-a/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -59,63 +56,63 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "experiment-nrwl-nx:build"
+            "browserTarget": "app-a:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "experiment-nrwl-nx:build:production"
+              "browserTarget": "app-a:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "experiment-nrwl-nx:build"
+            "browserTarget": "app-a:build"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "apps/experiment-nrwl-nx/tsconfig.app.json",
-              "apps/experiment-nrwl-nx/tsconfig.spec.json"
+              "apps/app-a/tsconfig.app.json",
+              "apps/app-a/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/experiment-nrwl-nx/**"]
+            "exclude": ["**/node_modules/**", "!apps/app-a/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/experiment-nrwl-nx/jest.config.js",
-            "tsConfig": "apps/experiment-nrwl-nx/tsconfig.spec.json",
-            "setupFile": "apps/experiment-nrwl-nx/src/test-setup.ts"
+            "jestConfig": "apps/app-a/jest.config.js",
+            "tsConfig": "apps/app-a/tsconfig.spec.json",
+            "setupFile": "apps/app-a/src/test-setup.ts"
           }
         }
       }
     },
-    "experiment-nrwl-nx-e2e": {
-      "root": "apps/experiment-nrwl-nx-e2e",
-      "sourceRoot": "apps/experiment-nrwl-nx-e2e/src",
+    "app-a-e2e": {
+      "root": "apps/app-a-e2e",
+      "sourceRoot": "apps/app-a-e2e/src",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@nrwl/cypress:cypress",
           "options": {
-            "cypressConfig": "apps/experiment-nrwl-nx-e2e/cypress.json",
-            "tsConfig": "apps/experiment-nrwl-nx-e2e/tsconfig.e2e.json",
-            "devServerTarget": "experiment-nrwl-nx:serve"
+            "cypressConfig": "apps/app-a-e2e/cypress.json",
+            "tsConfig": "apps/app-a-e2e/tsconfig.e2e.json",
+            "devServerTarget": "app-a:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "experiment-nrwl-nx:serve:production"
+              "devServerTarget": "app-a:serve:production"
             }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/experiment-nrwl-nx-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/experiment-nrwl-nx-e2e/**"]
+            "tsConfig": ["apps/app-a-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/app-a-e2e/**"]
           }
         }
       }
@@ -133,5 +130,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "experiment-nrwl-nx"
+  "defaultProject": "app-a"
 }
