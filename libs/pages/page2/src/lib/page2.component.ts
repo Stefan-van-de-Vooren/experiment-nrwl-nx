@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'myworkspace-page2',
+  selector: 'sap-page2',
   templateUrl: './page2.component.html',
   styleUrls: ['./page2.component.css']
 })

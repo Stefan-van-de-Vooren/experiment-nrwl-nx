@@ -13,22 +13,22 @@ import { RouterModule } from '@angular/router';
         {
           path: 'page1',
           loadChildren: () =>
-            import('@myworkspace/pages/page1').then(module => module.Page1Module)
+            import('@sap/pages/page1').then(module => module.Page1Module)
         },
         {
           path: 'page2',
           loadChildren: () =>
-            import('@myworkspace/pages/page2').then(module => module.Page2Module)
+            import('@sap/pages/page2').then(module => module.Page2Module)
         },
         {
           path: 'page3',
           loadChildren: () =>
-            import('@myworkspace/pages/page3').then(module => module.Page3Module)
+            import('@sap/pages/page3').then(module => module.Page3Module)
         },
         {
           path: 'page4',
           loadChildren: () =>
-            import('@myworkspace/pages/page4').then(module => module.Page4Module)
+            import('@sap/pages/page4').then(module => module.Page4Module)
         }
       ],
       { initialNavigation: 'enabled' }

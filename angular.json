@@ -6,7 +6,7 @@
       "schematics": {},
       "root": "apps/app-a",
       "sourceRoot": "apps/app-a/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -122,7 +122,7 @@
       "schematics": {},
       "root": "apps/app-b",
       "sourceRoot": "apps/app-b/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -237,7 +237,7 @@
       "projectType": "library",
       "root": "libs/pages/page1",
       "sourceRoot": "libs/pages/page1/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -264,7 +264,7 @@
       "projectType": "library",
       "root": "libs/pages/page2",
       "sourceRoot": "libs/pages/page2/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -291,7 +291,7 @@
       "projectType": "library",
       "root": "libs/pages/page3",
       "sourceRoot": "libs/pages/page3/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -318,7 +318,7 @@
       "projectType": "library",
       "root": "libs/pages/page4",
       "sourceRoot": "libs/pages/page4/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -345,7 +345,7 @@
       "projectType": "library",
       "root": "libs/ui/header",
       "sourceRoot": "libs/ui/header/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -372,7 +372,7 @@
       "projectType": "library",
       "root": "libs/ui/components",
       "sourceRoot": "libs/ui/components/src",
-      "prefix": "myworkspace",
+      "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
