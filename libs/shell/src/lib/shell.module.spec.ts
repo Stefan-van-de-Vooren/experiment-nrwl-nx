@@ -1,5 +1,5 @@
 import { async, TestBed } from '@angular/core/testing';
-import { UiHeaderModule } from './ui-header.module';
+import { UiHeaderModule } from './shell.module';
 
 describe('UiHeaderModule', () => {
   beforeEach(async(() => {

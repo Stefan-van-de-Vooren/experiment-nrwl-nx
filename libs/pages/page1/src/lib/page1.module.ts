@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Page1Component } from './page1.component';
-import { UiHeaderModule } from '@sap/ui/header'
+import { ShellModule } from '@sap/shell'
 
 @NgModule({
   imports: [
     CommonModule,
-    UiHeaderModule,
+    ShellModule,
     RouterModule.forChild([
       {path: '', pathMatch: 'full', component: Page1Component}
     ])

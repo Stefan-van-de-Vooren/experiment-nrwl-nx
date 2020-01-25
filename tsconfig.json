@@ -20,7 +20,7 @@
       "@sap/pages/page2": ["libs/pages/page2/src/index.ts"],
       "@sap/pages/page3": ["libs/pages/page3/src/index.ts"],
       "@sap/pages/page4": ["libs/pages/page4/src/index.ts"],
-      "@sap/ui/header": ["libs/ui/header/src/index.ts"],
+      "@sap/shell": ["libs/shell/src/index.ts"],
       "@sap/ui/components": ["libs/ui/components/src/index.ts"]
     }
   },

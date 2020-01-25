@@ -341,28 +341,28 @@
       },
       "schematics": {}
     },
-    "ui-header": {
+    "shell": {
       "projectType": "library",
-      "root": "libs/ui/header",
-      "sourceRoot": "libs/ui/header/src",
+      "root": "libs/shell",
+      "sourceRoot": "libs/shell/src",
       "prefix": "sap",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/ui/header/tsconfig.lib.json",
-              "libs/ui/header/tsconfig.spec.json"
+              "libs/shell/tsconfig.lib.json",
+              "libs/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ui/header/**"]
+            "exclude": ["**/node_modules/**", "!libs/shell/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/ui/header/jest.config.js",
-            "tsConfig": "libs/ui/header/tsconfig.spec.json",
-            "setupFile": "libs/ui/header/src/test-setup.ts"
+            "jestConfig": "libs/shell/jest.config.js",
+            "tsConfig": "libs/shell/tsconfig.spec.json",
+            "setupFile": "libs/shell/src/test-setup.ts"
           }
         }
       },
