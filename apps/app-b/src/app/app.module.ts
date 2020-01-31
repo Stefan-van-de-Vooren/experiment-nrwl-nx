@@ -8,9 +8,26 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    RouterModule.forRoot(
+      [
+        {
+          path: 'page3',
+          loadChildren: () =>
+            import('@sap/pages/page3').then(module => module.Page3Module)
+        },
+        {
+          path: 'page4',
+          loadChildren: () =>
+            import('@sap/pages/page4').then(module => module.Page4Module)
+        },
+        { path: '**', redirectTo: '/page1', pathMatch: 'full' },
+      ],
+      { initialNavigation: 'enabled' }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
+

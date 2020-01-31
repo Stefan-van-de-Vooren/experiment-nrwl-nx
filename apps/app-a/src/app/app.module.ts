@@ -25,11 +25,6 @@ import { RouterModule } from '@angular/router';
           loadChildren: () =>
             import('@sap/pages/page3').then(module => module.Page3Module)
         },
-        {
-          path: 'page4',
-          loadChildren: () =>
-            import('@sap/pages/page4').then(module => module.Page4Module)
-        },
         { path: '**', redirectTo: '/page1', pathMatch: 'full' },
       ],
       { initialNavigation: 'enabled' }
