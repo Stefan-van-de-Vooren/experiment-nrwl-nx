@@ -11,37 +11,12 @@
     "nx.json": "*"
   },
   "projects": {
-    "app-a": {
+    "sap": {
       "tags": []
     },
-    "app-a-e2e": {
+    "sap-e2e": {
       "tags": [],
-      "implicitDependencies": ["app-a"]
-    },
-    "app-b": {
-      "tags": []
-    },
-    "app-b-e2e": {
-      "tags": [],
-      "implicitDependencies": ["app-b"]
-    },
-    "page1": {
-      "tags": []
-    },
-    "page2": {
-      "tags": []
-    },
-    "page3": {
-      "tags": []
-    },
-    "page4": {
-      "tags": []
-    },
-    "shell": {
-      "tags": []
-    },
-    "ui-components": {
-      "tags": []
+      "implicitDependencies": ["sap"]
     }
   }
 }
