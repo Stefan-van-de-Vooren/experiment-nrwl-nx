@@ -24,6 +24,9 @@
     "app-a-e2e": {
       "tags": [],
       "implicitDependencies": ["app-a"]
+    },
+    "pages-page1": {
+      "tags": []
     }
   }
 }

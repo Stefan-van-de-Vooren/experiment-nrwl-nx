@@ -232,6 +232,33 @@
           }
         }
       }
+    },
+    "pages-page1": {
+      "projectType": "library",
+      "root": "libs/pages/page1",
+      "sourceRoot": "libs/pages/page1/src",
+      "prefix": "sap",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/pages/page1/tsconfig.lib.json",
+              "libs/pages/page1/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/pages/page1/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/pages/page1/jest.config.js",
+            "tsConfig": "libs/pages/page1/tsconfig.spec.json",
+            "setupFile": "libs/pages/page1/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

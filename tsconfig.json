@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@sap/pages/page1": ["libs/pages/page1/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
