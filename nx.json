@@ -17,6 +17,13 @@
     "sap-e2e": {
       "tags": [],
       "implicitDependencies": ["sap"]
+    },
+    "app-a": {
+      "tags": []
+    },
+    "app-a-e2e": {
+      "tags": [],
+      "implicitDependencies": ["app-a"]
     }
   }
 }
