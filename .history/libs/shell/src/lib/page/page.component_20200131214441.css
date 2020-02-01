@@ -1,0 +1,5 @@
+:host {
+    display: block;
+    padding-top: var(--app-header-height);
+    padding-bottom: var(--app-footer-height);
+}

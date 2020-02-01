@@ -7,8 +7,8 @@ import { tour1, tour2 } from './data';
   styleUrls: ['./page1.component.css']
 })
 export class Page1Component implements OnInit {
-  dataTour1: any = tour1.results;
-  dataTour2: any = tour2.results;
+  dataTour1: any = tour1;
+  dataTour2: any = tour2;
 
   constructor() {}
 

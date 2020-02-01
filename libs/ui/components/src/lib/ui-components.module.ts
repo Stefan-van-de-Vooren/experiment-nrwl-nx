@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IconComponent } from './icon/icon.component';
 import { ButtonComponent } from './button/button.component';
-import { GraphComponent } from './graph/graph.component';
 import { ImageComponent } from './image/image.component';
+import { UiComponentsGraphModule } from './graph/graph.module';
 
 @NgModule({
-  imports: [CommonModule],
-  declarations: [IconComponent, ButtonComponent, GraphComponent, ImageComponent],
-  exports: [IconComponent, ButtonComponent, GraphComponent, ImageComponent]
+  imports: [CommonModule, UiComponentsGraphModule],
+  declarations: [IconComponent, ButtonComponent, ImageComponent],
+  exports: [IconComponent, ButtonComponent, ImageComponent, UiComponentsGraphModule]
 })
 export class UiComponentsModule {}

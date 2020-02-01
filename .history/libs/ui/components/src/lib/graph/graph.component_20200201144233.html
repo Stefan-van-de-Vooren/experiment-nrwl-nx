@@ -10,5 +10,8 @@
   [yAxisLabel]="yAxisLabel"
   [timeline]="timeline"
   [results]="results"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)"
 >
 </ngx-charts-line-chart>
