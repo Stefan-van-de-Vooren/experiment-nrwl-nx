@@ -1,0 +1,43 @@
+:host {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    padding: var(--gutter--small) var(--gutter--normal) ;
+    box-shadow: 0px -1px 3px rgba(2,8,20,.06), 3px 1px 0px rgba(2,8,20,.04);
+    height: var(--app-footer-height);
+    color: var(--text-color--dark);
+}
+
+:host .btn {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+:host .btn:after{
+    content: '';
+    display: inline-block;
+    border-left: 1px solid rgba(0, 0, 0, 0.13);
+    height: 55%;
+    position: absolute;
+    right: 0px;
+    margin-top: 7%;
+ }
+
+ :host .btn:last-child:after { 
+     border: none; 
+}
+
+:host .btn.active .icon_btn {
+    width: 2.2em;
+    fill: var(--color-active);
+}
+
+:host .icon_btn {
+    width: 2em;
+}
