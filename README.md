@@ -1,12 +1,18 @@
-# sap
+# Experiment with NRWL NX (version 8)
 
-This project was generated using [Nx](https://nx.dev).
+## Setup:
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+Make 2 simple apps consist of multiple pages and some helper ui libraries. With this setup we can experiment with NRWL NX dep-graph.
 
-🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
+<img src="docs-assets/setup-project.jpg" width="450"></p>
 
-## Quick Start & Documentation
+Each orange header is a project in NX.
+
+## Presentation:
+
+See nrwl-nx-presentation.key for more details for this experiment.
+
+## Quick Start & Documentation NRWL NX
 
 [Nx Documentation](https://nx.dev/angular)
 
