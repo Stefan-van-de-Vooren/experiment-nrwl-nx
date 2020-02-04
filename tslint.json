@@ -56,8 +56,20 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "app:app-a",
+            "onlyDependOnLibsWithTags": ["page:app-a", "shared"]
+          },
+          {
+            "sourceTag": "app:app-b",
+            "onlyDependOnLibsWithTags": ["page:app-b", "shared"]
+          },
+          {
+            "sourceTag": "scope:page",
+            "onlyDependOnLibsWithTags": ["shared"]
+          },
+          {
+            "sourceTag": "shared",
+            "onlyDependOnLibsWithTags": ["shared"]
           }
         ]
       }

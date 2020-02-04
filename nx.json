@@ -12,36 +12,36 @@
   },
   "projects": {
     "app-a": {
-      "tags": []
+      "tags": ["app:app-a"]
     },
     "app-a-e2e": {
-      "tags": [],
+      "tags": ["app:app-a"],
       "implicitDependencies": ["app-a"]
     },
     "app-b": {
-      "tags": []
+      "tags": ["app:app-b"]
     },
     "app-b-e2e": {
-      "tags": [],
+      "tags": ["app:app-b"],
       "implicitDependencies": ["app-b"]
     },
     "page1": {
-      "tags": []
+      "tags": ["scope:page", "page:app-a"]
     },
     "page2": {
-      "tags": []
+      "tags": ["scope:page", "page:app-a"]
     },
     "page3": {
-      "tags": []
+      "tags": ["scope:page", "page:app-a"]
     },
     "page4": {
-      "tags": []
+      "tags": ["scope:page", "page:app-a"]
     },
     "shell": {
-      "tags": []
+      "tags": ["scope:page", "shared"]
     },
     "ui-components": {
-      "tags": []
+      "tags": ["shared"]
     }
   }
 }
