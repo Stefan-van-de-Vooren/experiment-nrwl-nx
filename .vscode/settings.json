@@ -1,3 +1,11 @@
 {
-    "local-history.path": "/Users/stefanvandevooren/.vscode/history"
+    "local-history.path": "/Users/stefanvandevooren/.vscode/history",
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }
